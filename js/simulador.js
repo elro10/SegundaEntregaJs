@@ -20,11 +20,9 @@ color.addEventListener("change",(e)=>{
     document.getElementById("formulario-usuario").addEventListener("submit", manejadorFormularioUsuario);
     
     function manejadorFormularioUsuario(e) {
-    console.log(e);
     e.preventDefault();
     nombreUsuario = document.getElementById("user").value;
     localStorage.setItem("userName",nombreUsuario)
-    console.log(localStorage.getItem("userName"))
     mostrarPanel();
     }
     
